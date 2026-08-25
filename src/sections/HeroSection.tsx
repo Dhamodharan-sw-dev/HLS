@@ -50,15 +50,13 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <div className="mx-auto w-full max-w-[620px]">
-            <div className="rounded-[28px] border-2 border-dashed border-ink-200 p-3">
+          <div className="rounded-[28px] border-ink-200 p-3">
               <img
                 src="assets/hero/couple-workout.jpg"
                 alt="A woman and man smiling together after a workout, holding water bottles and a yoga mat"
                 className="aspect-[990/735] w-full rounded-[20px] object-cover"
               />
             </div>
-          </div>
         </div>
       </Container>
     </section>

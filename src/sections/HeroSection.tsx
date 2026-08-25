@@ -55,7 +55,7 @@ export default function HeroSection() {
               <img
                 src="assets/hero/couple-workout.jpg"
                 alt="A woman and man smiling together after a workout, holding water bottles and a yoga mat"
-                className="aspect-[1076/828] w-full rounded-[20px] object-cover"
+                className="aspect-[990/735] w-full rounded-[20px] object-cover"
               />
             </div>
           </div>

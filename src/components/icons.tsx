@@ -100,6 +100,40 @@ export function HeartIcon(props: IconProps) {
   )
 }
 
+export function HospitalBuildingIcon(props: IconProps) {
+  return (
+    <svg {...base} strokeWidth={1.4} {...props}>
+      <path d="M7 21V6.5L12 4l5 2.5V21" />
+      <path d="M7 21h10" />
+      <circle cx="12" cy="8.4" r="2.6" />
+      <path d="M12 7.2v2.4M10.8 8.4h2.4" />
+      <path d="M10 21v-3.5h4V21" />
+      <path d="M3 21V9.8L7 8" />
+      <path d="M21 21V9.8L17 8" />
+    </svg>
+  )
+}
+
+export function MoneyBagIcon(props: IconProps) {
+  return (
+    <svg {...base} strokeWidth={1.5} {...props}>
+      <path d="M9 4h6l1.6 3.4" />
+      <path d="M9 4 7.4 7.4" />
+      <path d="M7.4 7.4C4.4 9.7 3 12.6 3 15a6 6 0 0 0 12 0c0-2.4-1.4-5.3-4.4-7.6" />
+      <text
+        x="9"
+        y="16.5"
+        fontSize="6.5"
+        fontWeight="700"
+        stroke="none"
+        fill="currentColor"
+      >
+        ₹
+      </text>
+    </svg>
+  )
+}
+
 export function ShieldIcon(props: IconProps) {
   return (
     <svg {...base} {...props}>

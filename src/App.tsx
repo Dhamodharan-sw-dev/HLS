@@ -11,6 +11,9 @@ import ChooseHealthInsurance from './sections/ChooseHealthInsurance'
 import ClaimProcess from './sections/ClaimProcess'
 import WellnessEcosystem from './sections/WellnessEcosystem'
 import AbhaSection from './sections/AbhaSection'
+import QuickLinks from './sections/QuickLinks'
+import GetStartedCTA from './sections/GetStartedCTA'
+import Footer from './sections/Footer'
 
 function App() {
   return (
@@ -29,7 +32,10 @@ function App() {
         <ClaimProcess />
         <WellnessEcosystem />
         <AbhaSection />
+        <QuickLinks />
+        <GetStartedCTA />
       </main>
+      <Footer />
     </>
   )
 }

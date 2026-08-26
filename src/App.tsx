@@ -10,6 +10,7 @@ import AnnouncementBar from './sections/AnnouncementBar'
 import ChooseHealthInsurance from './sections/ChooseHealthInsurance'
 import ClaimProcess from './sections/ClaimProcess'
 import WellnessEcosystem from './sections/WellnessEcosystem'
+import AbhaSection from './sections/AbhaSection'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <ChooseHealthInsurance />
         <ClaimProcess />
         <WellnessEcosystem />
+        <AbhaSection />
       </main>
     </>
   )

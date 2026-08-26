@@ -9,6 +9,7 @@ import Benefits from './sections/Benefits'
 import AnnouncementBar from './sections/AnnouncementBar'
 import ChooseHealthInsurance from './sections/ChooseHealthInsurance'
 import ClaimProcess from './sections/ClaimProcess'
+import WellnessEcosystem from './sections/WellnessEcosystem'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <AnnouncementBar />
         <ChooseHealthInsurance />
         <ClaimProcess />
+        <WellnessEcosystem />
       </main>
     </>
   )

@@ -6,6 +6,7 @@ import ClaimsHelpBanner from './sections/ClaimsHelpBanner'
 import CareNovaDifference from './sections/CareNovaDifference'
 import WhatIsAndNeedInsurance from './sections/WhatIsAndNeedInsurance'
 import Benefits from './sections/Benefits'
+import AnnouncementBar from './sections/AnnouncementBar'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <CareNovaDifference />
         <WhatIsAndNeedInsurance />
         <Benefits />
+        <AnnouncementBar />
       </main>
     </>
   )

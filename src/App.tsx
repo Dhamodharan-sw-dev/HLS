@@ -7,6 +7,7 @@ import CareNovaDifference from './sections/CareNovaDifference'
 import WhatIsAndNeedInsurance from './sections/WhatIsAndNeedInsurance'
 import Benefits from './sections/Benefits'
 import AnnouncementBar from './sections/AnnouncementBar'
+import ChooseHealthInsurance from './sections/ChooseHealthInsurance'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <WhatIsAndNeedInsurance />
         <Benefits />
         <AnnouncementBar />
+        <ChooseHealthInsurance />
       </main>
     </>
   )

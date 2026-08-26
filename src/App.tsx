@@ -13,8 +13,8 @@ function App() {
       <Header />
       <main>
         <HeroSection />
-        <TrustStats />
         <InsurancePlans />
+        <TrustStats />
         <ClaimsHelpBanner />
         <CareNovaDifference />
         <WhatIsAndNeedInsurance />

@@ -8,6 +8,7 @@ import WhatIsAndNeedInsurance from './sections/WhatIsAndNeedInsurance'
 import Benefits from './sections/Benefits'
 import AnnouncementBar from './sections/AnnouncementBar'
 import ChooseHealthInsurance from './sections/ChooseHealthInsurance'
+import ClaimProcess from './sections/ClaimProcess'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Benefits />
         <AnnouncementBar />
         <ChooseHealthInsurance />
+        <ClaimProcess />
       </main>
     </>
   )

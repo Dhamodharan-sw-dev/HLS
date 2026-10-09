@@ -13,7 +13,17 @@ export function toPath(label: string) {
     .toLowerCase()
     .replace(/&/g, 'and')
     .replace(/[^a-z0-9]+/g, '')
-  return `${base}${slug}`
+  // Trailing slash: each mock route is published as <slug>/index.html.
+  return `${base}${slug}/`
 }
 
 export const HOME = base
+
+/**
+ * Resolves a public asset path against BASE_URL. Needed because the mock link
+ * pages live one level deep (/HLS/aboutus/), where a document-relative
+ * "assets/..." URL would resolve inside that folder instead of the site root.
+ */
+export function asset(p: string) {
+  return `${base}${p.replace(/^\/+/, '')}`
+}

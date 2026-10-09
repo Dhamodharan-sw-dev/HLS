@@ -1,7 +1,7 @@
 /**
  * Stand-in for a real photo/illustration. The Figma MCP asset-export quota
  * was exhausted before these images could be pulled — swap the div below
- * for a real <img src="assets/..."> once assets are available again.
+ * for a real <img src={asset('assets/...')}> once assets are available again.
  */
 export default function Placeholder({
   label,

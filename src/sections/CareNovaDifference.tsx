@@ -1,6 +1,6 @@
 import { Container } from '../components/Container'
 import { ArrowRightIcon } from '../components/icons'
-import { toPath } from '../lib/links'
+import { asset, toPath } from '../lib/links'
 
 type Row = {
   title: string
@@ -15,35 +15,35 @@ const rows: Row[] = [
     title: 'Beyond health insurance',
     body: 'As your health partner, we will keep you motivated on your journey towards health and wellness. We reward you for your good health with HealthReturns™ and provide you with support at every stage – with guidance on nutrition, fitness, and lifestyle.',
     linkLabel: 'Know more',
-    image: 'assets/carenova-difference/runners.jpg',
+    image: asset('assets/carenova-difference/runners.jpg'),
     imageSide: 'left',
   },
   {
     title: 'Trusted care managers',
     body: 'Our care managers simplify the process of health insurance for you, from explaining policy documents to filing a claim to managing paperwork and discharge during hospitalization. Connect with your care manager on the Activ Health App.',
     linkLabel: 'Know more',
-    image: 'assets/carenova-difference/handshake.jpg',
+    image: asset('assets/carenova-difference/handshake.jpg'),
     imageSide: 'right',
   },
   {
     title: 'Health coach',
     body: 'Get day-to-day tips and guidance from your personal doctor-on-call, medical specialists, dietitians, fitness gurus, and tobacco counselors to keep your health in top condition, always. Get the support you need to better manage chronic conditions like high blood pressure, high cholesterol, and diabetes.',
     linkLabel: 'Know more',
-    image: 'assets/carenova-difference/fruits.jpg',
+    image: asset('assets/carenova-difference/fruits.jpg'),
     imageSide: 'left',
   },
   {
     title: 'Chronic Management Program',
     body: 'A special program to manage the cost of living with four major chronic conditions – asthma, blood pressure, cholesterol, and diabetes. Get Day 1 cashless cover for your OPD expenses of medicines, diagnostic tests, and doctor consultations.',
     linkLabel: 'Know more',
-    image: 'assets/carenova-difference/couple.jpg',
+    image: asset('assets/carenova-difference/couple.jpg'),
     imageSide: 'right',
   },
   {
     title: 'Support is just a text away',
     body: 'Reach out to our customer support team on WhatsApp and get your doubts and queries answered instantly.',
     linkLabel: 'Get in touch',
-    image: 'assets/carenova-difference/phone.jpg',
+    image: asset('assets/carenova-difference/phone.jpg'),
     imageSide: 'left',
   },
 ]

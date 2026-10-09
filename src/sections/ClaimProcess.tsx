@@ -1,4 +1,5 @@
 import { Container } from '../components/Container'
+import { asset } from '../lib/links'
 
 export default function ClaimProcess() {
   return (
@@ -24,7 +25,7 @@ export default function ClaimProcess() {
         <div className="mt-14 flex flex-col gap-16 sm:gap-20">
           <div className="flex flex-col items-center gap-8 lg:flex-row lg:gap-16">
             <img
-              src="assets/claim-process/cashless-couple.jpg"
+              src={asset('assets/claim-process/cashless-couple.jpg')}
               alt="Smiling couple"
               className="aspect-[553/292] w-full max-w-[555px] flex-none rounded-md object-cover"
             />
@@ -52,7 +53,7 @@ export default function ClaimProcess() {
 
           <div className="flex flex-col items-center gap-8 lg:flex-row-reverse lg:gap-16">
             <img
-              src="assets/claim-process/reimbursement-phone.jpg"
+              src={asset('assets/claim-process/reimbursement-phone.jpg')}
               alt="Hand holding a phone showing a successful transaction"
               className="aspect-[555/292] w-full max-w-[555px] flex-none rounded-md object-cover"
             />

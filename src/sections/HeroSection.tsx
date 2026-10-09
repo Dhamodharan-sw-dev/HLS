@@ -1,6 +1,6 @@
 import { Container } from '../components/Container'
 import { ArrowRightIcon, GiftIcon } from '../components/icons'
-import { toPath } from '../lib/links'
+import { asset, toPath } from '../lib/links'
 
 export default function HeroSection() {
   return (
@@ -53,7 +53,7 @@ export default function HeroSection() {
 
           <div className="rounded-[28px] border-ink-200 p-3">
               <img
-                src="assets/hero/couple-workout.jpg"
+                src={asset('assets/hero/couple-workout.jpg')}
                 alt="A woman and man smiling together after a workout, holding water bottles and a yoga mat"
                 className="aspect-[990/735] w-full rounded-[20px] object-cover"
               />

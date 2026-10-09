@@ -1,5 +1,5 @@
 import { Container } from '../components/Container'
-import { toPath } from '../lib/links'
+import { asset, toPath } from '../lib/links'
 
 type Stat = {
   icon: string
@@ -10,43 +10,43 @@ type Stat = {
 
 const stats: Stat[] = [
   {
-    icon: 'assets/trust-stats/umbrella-family.png',
+    icon: asset('assets/trust-stats/umbrella-family.png'),
     value: '2.3 Cr +',
     label: 'Lives Insured',
     linkLabel: 'Read testimonials',
   },
   {
-    icon: 'assets/trust-stats/globe-pin.png',
+    icon: asset('assets/trust-stats/globe-pin.png'),
     value: '5000 +',
     label: 'Locations Presence',
     linkLabel: 'Locate branch',
   },
   {
-    icon: 'assets/trust-stats/hospital.png',
+    icon: asset('assets/trust-stats/hospital.png'),
     value: '16500 +',
     label: 'Cashless Hospitals',
     linkLabel: 'Locate hospital',
   },
   {
-    icon: 'assets/trust-stats/claim-handshake.png',
+    icon: asset('assets/trust-stats/claim-handshake.png'),
     value: '29 Lakhs',
     label: 'Claims Settled in FY 25-26',
     linkLabel: 'Raise claim',
   },
   {
-    icon: 'assets/trust-stats/clipboard-shield.png',
+    icon: asset('assets/trust-stats/clipboard-shield.png'),
     value: '97% *',
     label: 'Claim Settlement Ratio for FY 25-26',
     linkLabel: 'Know More',
   },
   {
-    icon: 'assets/trust-stats/rupee-hand.png',
+    icon: asset('assets/trust-stats/rupee-hand.png'),
     value: '2 Lakhs',
     label: 'Customers Earning HealthReturns™',
     linkLabel: 'Know More',
   },
   {
-    icon: 'assets/trust-stats/doctor.png',
+    icon: asset('assets/trust-stats/doctor.png'),
     value: '2.1 Lakhs',
     label: 'Lives Intervened by Health Coaches',
     linkLabel: 'Know More',

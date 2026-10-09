@@ -1,5 +1,6 @@
 import { Container } from '../components/Container'
 import { CheckIcon } from '../components/icons'
+import { asset } from '../lib/links'
 
 type Plan = {
   name: string
@@ -12,7 +13,7 @@ type Plan = {
 const plans: Plan[] = [
   {
     name: 'Activ Yuva',
-    image: 'assets/insurance-plans/activ-yuva.jpg',
+    image: asset('assets/insurance-plans/activ-yuva.jpg'),
     tagline: 'Health insurance designed for the way you live today',
     features: [
       'Earn up to 100% of your premium back as **HealthReturns™**',
@@ -22,7 +23,7 @@ const plans: Plan[] = [
   },
   {
     name: 'Activ One MAX',
-    image: 'assets/insurance-plans/activ-one-max.jpg',
+    image: asset('assets/insurance-plans/activ-one-max.jpg'),
     featured: true,
     tagline:
       'HealthReturns™ + No Capping on Medical Expenses + Super Reload',
@@ -34,7 +35,7 @@ const plans: Plan[] = [
   },
   {
     name: 'Activ One NXT',
-    image: 'assets/insurance-plans/activ-one-nxt.jpg',
+    image: asset('assets/insurance-plans/activ-one-nxt.jpg'),
     tagline:
       'HealthReturns™ + No Capping on Medical Expenses + Super Reload',
     features: [

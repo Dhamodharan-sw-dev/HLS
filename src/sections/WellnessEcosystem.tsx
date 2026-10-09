@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Container } from '../components/Container'
 import { ArrowRightIcon } from '../components/icons'
-import { toPath } from '../lib/links'
+import { asset, toPath } from '../lib/links'
 
 const tabs = [
   'Track and manage your health',
@@ -24,12 +24,12 @@ export default function WellnessEcosystem() {
           <div>
             <div className="flex items-center gap-4">
               <img
-                src="assets/wellness-ecosystem/google-play-badge.png"
+                src={asset('assets/wellness-ecosystem/google-play-badge.png')}
                 alt="Get it on Google Play"
                 className="h-11 w-auto"
               />
               <img
-                src="assets/wellness-ecosystem/app-store-badge.png"
+                src={asset('assets/wellness-ecosystem/app-store-badge.png')}
                 alt="Download on the App Store"
                 className="h-11 w-auto"
               />
@@ -62,7 +62,7 @@ export default function WellnessEcosystem() {
           </div>
 
           <img
-            src="assets/wellness-ecosystem/app-phone-mockup.jpg"
+            src={asset('assets/wellness-ecosystem/app-phone-mockup.jpg')}
             alt="Activ Health app showing the community screen with leaderboard rank, activity feed, and upcoming events"
             className="mx-auto w-full max-w-[290px]"
           />

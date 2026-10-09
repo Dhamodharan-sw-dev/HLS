@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Container } from '../components/Container'
+import { asset } from '../lib/links'
 
 const items = [
   {
@@ -27,7 +28,7 @@ export default function ChooseHealthInsurance() {
         <div className="mt-10 grid gap-10 lg:grid-cols-2 lg:gap-16">
           <div>
             <img
-              src="assets/choose-health-insurance/heart-hands.jpg"
+              src={asset('assets/choose-health-insurance/heart-hands.jpg')}
               alt="Two pairs of hands cradling a red heart with a heartbeat line"
               className="aspect-[553/238] w-full rounded-md object-cover"
             />

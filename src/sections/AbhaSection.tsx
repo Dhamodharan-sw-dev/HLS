@@ -1,17 +1,17 @@
 import { Container } from '../components/Container'
-import { toPath } from '../lib/links'
+import { asset, toPath } from '../lib/links'
 
 const features = [
   {
-    icon: 'assets/abha/icon-app.png',
+    icon: asset('assets/abha/icon-app.png'),
     label: 'App for your Health Records',
   },
   {
-    icon: 'assets/abha/icon-access.png',
+    icon: asset('assets/abha/icon-access.png'),
     label: 'Access to Health Records',
   },
   {
-    icon: 'assets/abha/icon-secure.png',
+    icon: asset('assets/abha/icon-secure.png'),
     label: 'Secure & Private',
   },
 ]
@@ -50,7 +50,7 @@ export default function AbhaSection() {
               <div className="flex items-center gap-2">
                 <span className="text-sm text-ink-400">Approved by</span>
                 <img
-                  src="assets/abha/nha-logo.png"
+                  src={asset('assets/abha/nha-logo.png')}
                   alt="National Health Authority"
                   className="h-8 w-auto"
                 />

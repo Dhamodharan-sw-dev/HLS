@@ -6,6 +6,7 @@ import {
   PolicyDocumentIcon,
   RaiseHandIcon,
 } from '../components/icons'
+import { toPath } from '../lib/links'
 
 const links = [
   { icon: RaiseHandIcon, label: 'Raise a Claim' },
@@ -26,7 +27,7 @@ export default function QuickLinks() {
           {links.map(({ icon: Icon, label }) => (
             <a
               key={label}
-              href="#top"
+              href={toPath(label)}
               className="flex items-center gap-2 pl-6 text-sm font-medium text-brand-red first:pl-0 hover:text-brand-red-dark"
             >
               <Icon className="h-5 w-5 flex-none" />

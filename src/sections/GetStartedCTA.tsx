@@ -1,3 +1,5 @@
+import { toPath } from '../lib/links'
+
 export default function GetStartedCTA() {
   return (
     <section className="bg-[#ffe2de] py-10">
@@ -8,13 +10,13 @@ export default function GetStartedCTA() {
 
         <div className="mt-6 flex flex-wrap items-center justify-center gap-6 divide-x divide-black/10">
           <a
-            href="#top"
+            href={toPath('Quick Quote')}
             className="rounded-full bg-brand-red/90 px-7 py-2.5 text-sm font-semibold text-white hover:bg-brand-red"
           >
             Quick Quote
           </a>
           <a
-            href="#top"
+            href={toPath('Renew Policy')}
             className="rounded-full bg-brand-red-dark px-7 py-2.5 text-sm font-semibold text-white hover:bg-brand-red"
           >
             Renew Policy

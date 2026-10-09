@@ -1,4 +1,5 @@
 import { Container } from '../components/Container'
+import { toPath } from '../lib/links'
 
 type Stat = {
   icon: string
@@ -76,7 +77,7 @@ export default function TrustStats() {
               </p>
               <p className="mt-1 text-sm text-ink-600">{stat.label}</p>
               <a
-                href="#top"
+                href={toPath(stat.linkLabel)}
                 className="mt-2 inline-flex items-center gap-1 text-sm font-medium text-brand-red hover:text-brand-red-dark"
               >
                 {stat.linkLabel}

@@ -1,5 +1,6 @@
 import { Container } from '../components/Container'
 import { ArrowRightIcon, PillIcon, ShieldIcon, StethoscopeIcon } from '../components/icons'
+import { toPath } from '../lib/links'
 
 const reasons = [
   {
@@ -106,7 +107,7 @@ export default function WhatIsAndNeedInsurance() {
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
-              href="#top"
+              href={toPath('Get a Quote')}
               className="inline-flex items-center gap-2 rounded-full bg-brand-red px-7 py-3 text-sm font-semibold text-white hover:bg-brand-red-dark"
             >
               Get a Quote

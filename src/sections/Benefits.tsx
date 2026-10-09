@@ -5,6 +5,7 @@ import {
   HospitalBuildingIcon,
   MoneyBagIcon,
 } from '../components/icons'
+import { toPath } from '../lib/links'
 
 const benefits = [
   {
@@ -29,7 +30,10 @@ const benefits = [
     body: (
       <>
         If you are being hospitalized, choose a{' '}
-        <a href="#" className="text-brand-red hover:text-brand-red-dark">
+        <a
+          href={toPath('Network Hospital')}
+          className="text-brand-red hover:text-brand-red-dark"
+        >
           network hospital
         </a>{' '}
         and you wouldn&apos;t have to worry about the hospital bills. The

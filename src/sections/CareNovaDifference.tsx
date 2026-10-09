@@ -1,5 +1,6 @@
 import { Container } from '../components/Container'
 import { ArrowRightIcon } from '../components/icons'
+import { toPath } from '../lib/links'
 
 type Row = {
   title: string
@@ -85,7 +86,7 @@ export default function CareNovaDifference() {
                   {row.body}
                 </p>
                 <a
-                  href="#top"
+                  href={toPath(row.linkLabel)}
                   className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-brand-red hover:text-brand-red-dark"
                 >
                   {row.linkLabel}

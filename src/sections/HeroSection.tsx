@@ -1,5 +1,6 @@
 import { Container } from '../components/Container'
 import { ArrowRightIcon, GiftIcon } from '../components/icons'
+import { toPath } from '../lib/links'
 
 export default function HeroSection() {
   return (
@@ -42,7 +43,7 @@ export default function HeroSection() {
                 <ArrowRightIcon className="h-4 w-4" />
               </a>
               <a
-                href="#top"
+                href={toPath('Calculate Premium')}
                 className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-ink-800 hover:bg-surface-50"
               >
                 Calculate Premium

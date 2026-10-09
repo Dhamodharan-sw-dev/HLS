@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Container } from '../components/Container'
 import { ArrowRightIcon } from '../components/icons'
+import { toPath } from '../lib/links'
 
 const tabs = [
   'Track and manage your health',
@@ -52,7 +53,7 @@ export default function WellnessEcosystem() {
             </div>
 
             <a
-              href="#top"
+              href={toPath('Wellness Ecosystem')}
               className="mt-4 inline-flex items-center gap-1.5 pl-5 text-sm font-medium text-brand-red hover:text-brand-red-dark"
             >
               View more

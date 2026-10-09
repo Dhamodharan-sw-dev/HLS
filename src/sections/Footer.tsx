@@ -8,6 +8,7 @@ import {
   PlusIcon,
   SocialIcon,
 } from '../components/icons'
+import { HOME, toPath } from '../lib/links'
 
 const socialLinks = [
   { kind: 'facebook', label: 'Facebook' },
@@ -80,7 +81,7 @@ const subsidiaries = [
 
 function Logo() {
   return (
-    <a href="#top" className="flex items-center gap-3">
+    <a href={HOME} className="flex items-center gap-3">
       <span className="h-[30px] w-1 rounded-full bg-[#2eb278]" />
       <span className="flex flex-col leading-none font-heading">
         <span className="text-xl font-bold tracking-tight text-ink-800">
@@ -143,7 +144,7 @@ export default function Footer() {
                 {socialLinks.map((s) => (
                   <a
                     key={s.label}
-                    href="#top"
+                    href={toPath(s.label)}
                     aria-label={s.label}
                     className="grid h-8 w-8 place-items-center rounded-full border border-brand-red text-brand-red hover:bg-brand-red/10"
                   >
@@ -157,7 +158,7 @@ export default function Footer() {
                 OUR ACTIV HEALTH APP
               </p>
               <a
-                href="#top"
+                href={toPath('Download Now')}
                 className="mt-3 inline-flex items-center rounded-full bg-brand-red-dark px-6 py-2.5 text-sm font-semibold text-white hover:bg-brand-red"
               >
                 Download Now
@@ -173,7 +174,7 @@ export default function Footer() {
                       {planCategories[i].links.map((link) => (
                         <a
                           key={link}
-                          href="#top"
+                          href={toPath(link)}
                           className="text-sm text-ink-600 hover:text-brand-red"
                         >
                           {link}
@@ -235,7 +236,7 @@ export default function Footer() {
                           {col.map((link) => (
                             <a
                               key={link}
-                              href="#top"
+                              href={toPath(link)}
                               className="text-sm text-ink-600 hover:text-brand-red"
                             >
                               {link}
@@ -255,14 +256,14 @@ export default function Footer() {
               </p>
               <div className="mt-3 flex flex-wrap gap-3">
                 <a
-                  href="#top"
+                  href={toPath('Playstore')}
                   className="inline-flex items-center gap-2 rounded-full border border-brand-red px-4 py-2 text-sm font-medium text-brand-red hover:bg-brand-red/5"
                 >
                   <PlayStoreIcon className="h-4 w-4" />
                   Playstore
                 </a>
                 <a
-                  href="#top"
+                  href={toPath('Appstore')}
                   className="inline-flex items-center gap-2 rounded-full border border-brand-red px-4 py-2 text-sm font-medium text-brand-red hover:bg-brand-red/5"
                 >
                   <AppleIcon className="h-4 w-4" />
@@ -296,7 +297,7 @@ export default function Footer() {
               {socialLinks.slice(0, 5).map((s) => (
                 <a
                   key={s.label}
-                  href="#top"
+                  href={toPath(s.label)}
                   aria-label={s.label}
                   className="grid h-8 w-8 place-items-center rounded-full bg-white/15 text-white hover:bg-white/25"
                 >

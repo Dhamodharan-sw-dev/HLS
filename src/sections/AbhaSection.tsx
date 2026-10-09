@@ -1,4 +1,5 @@
 import { Container } from '../components/Container'
+import { toPath } from '../lib/links'
 
 const features = [
   {
@@ -41,7 +42,7 @@ export default function AbhaSection() {
 
             <div className="mt-10 flex flex-wrap items-center gap-6">
               <a
-                href="#top"
+                href={toPath('Create CareNova ID')}
                 className="inline-flex items-center rounded-full bg-brand-red px-6 py-3 text-sm font-semibold text-white hover:bg-brand-red-dark"
               >
                 Create CARENOVA ID

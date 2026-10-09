@@ -1,3 +1,5 @@
+import { toPath } from '../lib/links'
+
 export default function AnnouncementBar() {
   return (
     <div className="bg-[#ffe7e5] text-center text-sm text-ink-800">
@@ -15,7 +17,7 @@ export default function AnnouncementBar() {
       </p>
       <p className="px-4 py-2.5">
         <a
-          href="#top"
+          href={toPath('Bimagyaan Quiz')}
           className="text-brand-red underline hover:text-brand-red-dark"
         >
           IRDAI Initiate - BIMAGYAAN : An Insurance Awareness Quiz
